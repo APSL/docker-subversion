@@ -1,0 +1,14 @@
+# Permisos svn  Authz
+[groups]
+
+no_rights = 
+admin = user
+group = user
+
+[/]
+@admin = rw
+@no_rights = 
+* =
+
+[repo:/]
+@group = rw

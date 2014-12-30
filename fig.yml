@@ -1,0 +1,9 @@
+subversion:
+    build: .
+    ports:
+        - "8000:80"
+    environment:
+        CIRCUS_HTTPD: False
+        CIRCUS_STATSD: False
+        DEBUG: True
+        DOMAIN: "localhost:8000"
